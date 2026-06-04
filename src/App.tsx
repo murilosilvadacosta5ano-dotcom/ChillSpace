@@ -19,10 +19,10 @@ export default function App() {
           href="https://discord.gg/qTv8a846BA"
           target="_blank"
           rel="noopener noreferrer"
-          whileHover={{ scale: 1.05, boxShadow: "0px 10px 15px -3px rgba(0,0,0,0.1)" }}
+          whileHover={{ scale: 1.05, boxShadow: "0px 15px 20px -5px rgba(251, 146, 60, 0.3)" }}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.2 }}
-          className="bg-orange-500 text-white px-8 py-3 rounded-xl font-bold text-lg hover:bg-orange-600 flex items-center gap-2 transition"
+          className="bg-white text-orange-950 px-8 py-4 rounded-full font-heading text-lg shadow-xl shadow-orange-100/50 hover:bg-slate-50 border border-slate-100 flex items-center gap-2 transition duration-300"
         >
           <Link className="size-5" /> Entrar no Servidor
         </motion.a>
@@ -54,6 +54,10 @@ export default function App() {
           className="w-full max-w-2xl rounded-3xl" 
         />
       </div>
+
+      <footer className="mt-auto mb-4 w-full text-left pl-4">
+        <p className="font-serif text-sm text-slate-400">Criadores: <span className="text-slate-500">xen, Nonsense</span></p>
+      </footer>
     </div>
   );
 }
