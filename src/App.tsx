@@ -39,11 +39,11 @@ export default function App() {
           Regras da Casa
         </h2>
         <div className="space-y-4">
-          <p><strong>1. Respeito em primeiro lugar:</strong> Gente, bora manter o respeito? Sem xingamentos, nada de brigas, só papo reto e tratar todo mundo bem.</p>
-          <p><strong>2. Chat organizado:</strong> Chat é lugar de conversa, não de spam. Evita flood, propaganda sem avisar e fonte bizarra que não dá pra ler, valeu?</p>
-          <p><strong>3. Tolerância total:</strong> Aqui zero preconceito. Respeito é a base: cada um na sua de boa, respeitando quem o outro é.</p>
-          <p><strong>4. Canais de voz:</strong> Tá na call? Bom senso sempre. Não precisa gritar, não atrapalha quem tá jogando sério e, claro, nada de abuso.</p>
-          <p><strong>5. Segurança acima de tudo:</strong> Cuidado com links estranhos, não vaza nada de ninguém e ó, evitou ban, não tenta voltar não, segue o jogo.</p>
+          <div className="p-3 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-md hover:scale-[1.01] hover:border hover:border-slate-100 cursor-default"><strong>1. Respeito em primeiro lugar:</strong> Gente, bora manter o respeito? Sem xingamentos, nada de brigas, só papo reto e tratar todo mundo bem.</div>
+          <div className="p-3 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-md hover:scale-[1.01] hover:border hover:border-slate-100 cursor-default"><strong>2. Chat organizado:</strong> Chat é lugar de conversa, não de spam. Evita flood, propaganda sem avisar e fonte bizarra que não dá pra ler, valeu?</div>
+          <div className="p-3 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-md hover:scale-[1.01] hover:border hover:border-slate-100 cursor-default"><strong>3. Tolerância total:</strong> Aqui zero preconceito. Respeito é a base: cada um na sua de boa, respeitando quem o outro é.</div>
+          <div className="p-3 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-md hover:scale-[1.01] hover:border hover:border-slate-100 cursor-default"><strong>4. Canais de voz:</strong> Tá na call? Bom senso sempre. Não precisa gritar, não atrapalha quem tá jogando sério e, claro, nada de abuso.</div>
+          <div className="p-3 rounded-xl transition-all duration-300 hover:bg-white hover:shadow-md hover:scale-[1.01] hover:border hover:border-slate-100 cursor-default"><strong>5. Segurança acima de tudo:</strong> Cuidado com links estranhos, não vaza nada de ninguém e ó, evitou ban, não tenta voltar não, segue o jogo.</div>
           <div className="mt-4 font-semibold text-orange-950 flex items-center justify-center gap-2">
             Já terminou de ler? Então entre no servidor ou add o Nimbus ao seu servidor! 
             <ProtectedImage src="https://res.cloudinary.com/dt5vtbeev/image/upload/v1780594746/11_Sem_T%C3%ADtulo_20260602155454_pdr3to.png" alt="Carinho" className="w-8 h-8"/>
@@ -71,7 +71,7 @@ export default function App() {
         />
       </div>
 
-      <footer className="mt-auto mb-4 w-full text-left pl-4">
+      <footer className="mt-auto mb-8 w-full text-center flex flex-col gap-2">
         <p className="font-serif text-sm text-slate-400">Criadores: <span className="text-slate-500">xen, Nonsense</span></p>
       </footer>
     </div>
