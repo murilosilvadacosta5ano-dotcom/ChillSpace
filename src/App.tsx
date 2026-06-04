@@ -5,9 +5,10 @@
 import ProtectedImage from "./components/ProtectedImage";
 import { Link, Bot } from "lucide-react";
 import { motion } from "motion/react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Termos, Politicas, Sobre, Verificacao } from "./pages";
 
-export default function App() {
-  return (
+const Home = () => (
     <div className="min-h-screen bg-white text-slate-800 p-6 flex flex-col items-center">
       <main className="w-full max-w-4xl flex flex-col items-center text-center mt-20 gap-10">
         <ProtectedImage 
@@ -75,5 +76,18 @@ export default function App() {
         <p className="font-serif text-sm text-slate-400">Criadores: <span className="text-slate-500">xen, Nonsense</span></p>
       </footer>
     </div>
+);
+
+export default function App() {
+  return (
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/termos" element={<Termos />} />
+            <Route path="/políticas" element={<Politicas />} />
+            <Route path="/sobre" element={<Sobre />} />
+            <Route path="/verificacao" element={<Verificacao />} />
+        </Routes>
+    </BrowserRouter>
   );
 }
